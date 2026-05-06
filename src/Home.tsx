@@ -6,7 +6,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Quote, Building2 } from 'lucide-react';
-import { SLIDES, SERVICES, CLIENTS, PARTNERS } from './constants';
+import { SLIDES, SERVICES, SUPPLIERS, PARTNERS } from './constants';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -213,18 +213,18 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-10">
           <div className="text-center mb-16 space-y-3">
-            <h2 className="text-primary text-xs font-bold uppercase tracking-[0.3em]">Our Network</h2>
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-900">Trusted by Local & International Leaders</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-900">Our Trusted Suppliers</h3>
+            <p className="text-slate-500 font-sans text-lg">Partnering with reliable suppliers to deliver quality materials and services for every project.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-12 lg:gap-20 opacity-60">
-            {CLIENTS.slice(0, 5).map((client) => (
-              <div key={client.name} className="flex flex-col items-center justify-center text-center h-16 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+            {SUPPLIERS.map((supplier) => (
+              <div key={supplier.name} className="flex flex-col items-center justify-center text-center h-16 w-32 grayscale hover:grayscale-0 transition-all duration-300">
                 <img 
-                  src={client.logo} 
-                  alt={client.name} 
+                  src={supplier.logo} 
+                  alt={supplier.name} 
                   className="max-h-full max-w-full object-contain"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(client.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
+                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(supplier.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
                   }}
                 />
               </div>

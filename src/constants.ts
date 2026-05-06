@@ -87,6 +87,17 @@ export const CLIENTS = [
   { name: 'Elixir Life Science', logo: '/logos/elixir.png' }
 ];
 
+export const SUPPLIERS = [
+  { name: 'Supplier 1', logo: '/logos/Suppliers/1.jpg' },
+  { name: 'Supplier 2', logo: '/logos/Suppliers/2.jpg' },
+  { name: 'Supplier 3', logo: '/logos/Suppliers/3.jpg' },
+  { name: 'Supplier 4', logo: '/logos/Suppliers/4.jpg' },
+  { name: 'Supplier 5', logo: '/logos/Suppliers/5.jpg' },
+  { name: 'Supplier 6', logo: '/logos/Suppliers/6.jpg' },
+  { name: 'Supplier 7', logo: '/logos/Suppliers/7.jpg' },
+  { name: 'Supplier 8', logo: '/logos/Suppliers/8.jpg' },
+];
+
 export const PARTNERS = [
   'Bry-Air', 'Dwyer', 'Enviro Technologies', 'PMEA', 'P3Ductal', 'LOYTEC'
 ];

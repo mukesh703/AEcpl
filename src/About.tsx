@@ -6,7 +6,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Target, Eye, Heart, ShieldCheck, Zap, Users, ChevronLeft, ChevronRight } from 'lucide-react';
-import { CLIENTS } from './constants';
+import { SUPPLIERS } from './constants';
 
 export default function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -213,15 +213,14 @@ export default function About() {
         {/* Our Network - Logo Grid Section */}
         <section className="mb-32 text-center">
           <div className="max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-primary text-xs font-bold uppercase tracking-[0.3em]">Our Network</h2>
-            <h3 className="text-3xl md:text-5xl font-bold text-slate-900">Trusted by Local & International Leaders</h3>
-            <p className="text-slate-500 font-sans text-lg">Partnering with pioneers to deliver excellence in the pharmaceutical and industrial landscape.</p>
+            <h3 className="text-3xl md:text-5xl font-bold text-slate-900">Our Trusted Suppliers</h3>
+            <p className="text-slate-500 font-sans text-lg">Partnering with reliable suppliers to deliver quality materials and services for every project.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8">
-            {CLIENTS.map((client, idx) => (
+            {SUPPLIERS.map((supplier, idx) => (
               <motion.div
-                key={client.name}
+                key={supplier.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -229,11 +228,11 @@ export default function About() {
                 className="group p-6 rounded-2xl bg-white border border-slate-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[120px]"
               >
                 <img 
-                  src={client.logo} 
-                  alt={client.name} 
+                  src={supplier.logo} 
+                  alt={supplier.name} 
                   className="max-h-16 max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-70 group-hover:opacity-100"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(client.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
+                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(supplier.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
                   }}
                 />
               </motion.div>
