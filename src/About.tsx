@@ -230,7 +230,7 @@ export default function About() {
                 <img 
                   src={supplier.logo} 
                   alt={supplier.name} 
-                  className="max-h-16 max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500 opacity-70 group-hover:opacity-100"
+                  className="max-h-16 max-w-full object-contain transition-all duration-500 hover:scale-110"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(supplier.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
                   }}

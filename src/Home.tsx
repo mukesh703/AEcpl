@@ -216,9 +216,9 @@ export default function Home() {
             <h3 className="text-2xl md:text-3xl font-bold text-slate-900">Our Trusted Suppliers</h3>
             <p className="text-slate-500 font-sans text-lg">Partnering with reliable suppliers to deliver quality materials and services for every project.</p>
           </div>
-          <div className="flex flex-wrap justify-center gap-12 lg:gap-20 opacity-60">
+          <div className="flex flex-wrap justify-center gap-12 lg:gap-20">
             {SUPPLIERS.map((supplier) => (
-              <div key={supplier.name} className="flex flex-col items-center justify-center text-center h-16 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+              <div key={supplier.name} className="flex flex-col items-center justify-center text-center h-16 w-32 transition-all duration-300 hover:scale-105">
                 <img 
                   src={supplier.logo} 
                   alt={supplier.name} 
