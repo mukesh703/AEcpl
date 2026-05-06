@@ -57,17 +57,17 @@ export default function About() {
     {
       name: "Subash Gupta",
       role: "Technical Director",
-      image: "/img/Subash.jpeg"
+      image: "./img/Subash.jpeg"
     },
     {
       name: "Ajay Pd. Yadav",
       role: "Senior Manager",
-      image: "/img/ajay.jpg"
+      image: "./img/ajay.jpg"
     },
     {
       name: "Samjhana Shrestha",
       role: "Operation Manager",
-      image: "/img/samjhana.jpeg"
+      image: "./img/samjhana.jpeg"
     }
   ];
 
@@ -137,7 +137,7 @@ export default function About() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-primary/10 rounded-[2.5rem] rotate-3 group-hover:rotate-6 transition-transform" />
                 <img 
-                  src="/img/Subash.jpeg" 
+                  src="./img/Subash.jpeg" 
                   alt="Technical Director" 
                   className="relative z-10 rounded-[2.5rem] shadow-xl w-full aspect-[4/5] object-cover hover:grayscale-0 transition-all duration-700" 
                 />
