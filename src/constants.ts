@@ -106,14 +106,14 @@ export const INDUSTRY_LEADERS = [
 ];
 
 export const SUPPLIERS = [
-  { name: 'Supplier 1', logo: './logos/suppliers/1.jpg' },
-  { name: 'Supplier 2', logo: './logos/suppliers/2.jpg' },
-  { name: 'Supplier 3', logo: './logos/suppliers/3.jpg' },
-  { name: 'Supplier 4', logo: './logos/suppliers/4.jpg' },
-  { name: 'Supplier 5', logo: './logos/suppliers/5.jpg' },
-  { name: 'Supplier 6', logo: './logos/suppliers/6.jpg' },
-  { name: 'Supplier 7', logo: './logos/suppliers/7.jpg' },
-  { name: 'Supplier 8', logo: './logos/suppliers/8.jpg' },
+  { name: 'Supplier 1', logo: './logos/Suppliers/1.jpg' },
+  { name: 'Supplier 2', logo: './logos/Suppliers/2.jpg' },
+  { name: 'Supplier 3', logo: './logos/Suppliers/3.jpg' },
+  { name: 'Supplier 4', logo: './logos/Suppliers/4.jpg' },
+  { name: 'Supplier 5', logo: './logos/Suppliers/5.jpg' },
+  { name: 'Supplier 6', logo: './logos/Suppliers/6.jpg' },
+  { name: 'Supplier 7', logo: './logos/Suppliers/7.jpg' },
+  { name: 'Supplier 8', logo: './logos/Suppliers/8.jpg' },
 ];
 
 export const PARTNERS = [
