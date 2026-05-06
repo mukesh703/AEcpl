@@ -6,7 +6,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Target, Eye, Heart, ShieldCheck, Zap, Users, ChevronLeft, ChevronRight } from 'lucide-react';
-import { SUPPLIERS } from './constants';
+import { INDUSTRY_LEADERS } from './constants';
 
 export default function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -55,28 +55,19 @@ export default function About() {
 
   const team = [
     {
-      name: "Er. Subash Gupta",
-      role: "Managing Director",
-      image: "/subash-gupta-md.png",
-      bio: "15+ years of expertise in pharmaceutical engineering and turnkey project management."
+      name: "Subash Gupta",
+      role: "Technical Director",
+      image: "/img/Subash.jpeg"
     },
     {
-      name: "Priya Sharma",
-      role: "Lead BMS Consultant",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
-      bio: "Specialist in LOYTEC automation systems and smart building integration."
+      name: "Ajay Pd. Yadav",
+      role: "Senior Manager",
+      image: "/img/ajay.jpg"
     },
     {
-      name: "Rajesh Khatri",
-      role: "Senior HVAC Engineer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
-      bio: "Expert in clean room design and high-efficiency ventilation solutions."
-    },
-    {
-      name: "Anjali Thapa",
-      role: "Operations Manager",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop",
-      bio: "Dedicated to ensuring project timelines and operational excellence across Nepal."
+      name: "Samjhana Shrestha",
+      role: "Operation Manager",
+      image: "/img/samjhana.jpeg"
     }
   ];
 
@@ -146,8 +137,8 @@ export default function About() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-primary/10 rounded-[2.5rem] rotate-3 group-hover:rotate-6 transition-transform" />
                 <img 
-                  src="/subash-gupta-md.png" 
-                  alt="Managing Director" 
+                  src="/img/Subash.jpeg" 
+                  alt="Technical Director" 
                   className="relative z-10 rounded-[2.5rem] shadow-xl w-full aspect-[4/5] object-cover hover:grayscale-0 transition-all duration-700" 
                 />
               </div>
@@ -155,7 +146,7 @@ export default function About() {
             <div className="space-y-8">
               <h2 className="text-primary text-sm font-bold uppercase tracking-[0.3em] flex items-center gap-3">
                 <span className="w-10 h-px bg-primary"></span>
-                Message from the Managing Director
+                Message from the Technical Director
               </h2>
               <div className="space-y-6">
                 <h3 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
@@ -170,8 +161,8 @@ export default function About() {
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100">
-                  <p className="text-xl font-bold text-slate-900">Er. Subash Gupta</p>
-                  <p className="text-sm font-bold text-primary uppercase tracking-widest">Managing Director</p>
+                  <p className="text-xl font-bold text-slate-900">Subash Gupta</p>
+                  <p className="text-sm font-bold text-primary uppercase tracking-widest">Technical Director</p>
                 </div>
               </div>
             </div>
@@ -213,14 +204,14 @@ export default function About() {
         {/* Our Network - Logo Grid Section */}
         <section className="mb-32 text-center">
           <div className="max-w-3xl mx-auto mb-16 space-y-4">
-            <h3 className="text-3xl md:text-5xl font-bold text-slate-900">Our Trusted Suppliers</h3>
-            <p className="text-slate-500 font-sans text-lg">Partnering with reliable suppliers to deliver quality materials and services for every project.</p>
+            <h3 className="text-3xl md:text-5xl font-bold text-slate-900">Trusted by Industry Leaders</h3>
+            <p className="text-slate-500 font-sans text-lg">Delivering quality and excellence to companies that rely on our expertise and commitment.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8">
-            {SUPPLIERS.map((supplier, idx) => (
+            {INDUSTRY_LEADERS.map((leader, idx) => (
               <motion.div
-                key={supplier.name}
+                key={leader.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -228,11 +219,11 @@ export default function About() {
                 className="group p-6 rounded-2xl bg-white border border-slate-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[120px]"
               >
                 <img 
-                  src={supplier.logo} 
-                  alt={supplier.name} 
+                  src={leader.logo} 
+                  alt={leader.name} 
                   className="max-h-16 max-w-full object-contain transition-all duration-500 hover:scale-110"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(supplier.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
+                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(leader.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
                   }}
                 />
               </motion.div>
@@ -248,7 +239,7 @@ export default function About() {
             <p className="text-slate-500 font-sans text-lg">Our multi-disciplinary team of engineers and consultants work together to deliver precision at every scale.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((member, idx) => (
               <motion.div
                 key={member.name}
@@ -264,9 +255,6 @@ export default function About() {
                 <div className="space-y-2">
                   <h4 className="text-xl font-bold text-slate-900">{member.name}</h4>
                   <p className="text-xs font-bold text-primary uppercase tracking-widest">{member.role}</p>
-                  <p className="text-sm text-slate-500 pt-4 font-sans leading-relaxed line-clamp-2">
-                    {member.bio}
-                  </p>
                 </div>
               </motion.div>
             ))}

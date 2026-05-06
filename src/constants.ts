@@ -87,6 +87,24 @@ export const CLIENTS = [
   { name: 'Elixir Life Science', logo: '/logos/elixir.png' }
 ];
 
+export const INDUSTRY_LEADERS = [
+  { name: 'Client 1', logo: '/logos/Client/1.jpg' },
+  { name: 'Client 2', logo: '/logos/Client/2.jpg' },
+  { name: 'Client 3', logo: '/logos/Client/3.jpg' },
+  { name: 'Client 4', logo: '/logos/Client/4.jpg' },
+  { name: 'Client 5', logo: '/logos/Client/5.jpg' },
+  { name: 'Client 6', logo: '/logos/Client/6.jpg' },
+  { name: 'Client 7', logo: '/logos/Client/7.jpg' },
+  { name: 'Client 8', logo: '/logos/Client/8.jpg' },
+  { name: 'Client 9', logo: '/logos/Client/9.jpg' },
+  { name: 'Client 10', logo: '/logos/Client/10.jpg' },
+  { name: 'Client 11', logo: '/logos/Client/11.jpg' },
+  { name: 'Client 12', logo: '/logos/Client/12.jpg' },
+  { name: 'Client 13', logo: '/logos/Client/13.jpg' },
+  { name: 'Client 14', logo: '/logos/Client/14.jpg' },
+  { name: 'Client 15', logo: '/logos/Client/15.jpg' },
+];
+
 export const SUPPLIERS = [
   { name: 'Supplier 1', logo: '/logos/suppliers/1.jpg' },
   { name: 'Supplier 2', logo: '/logos/suppliers/2.jpg' },
