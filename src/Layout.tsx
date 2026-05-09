@@ -140,7 +140,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <NavLink to="/">HOME</NavLink>
             <NavLink to="/about">ABOUT</NavLink>
             <NavLink to="/services">SERVICES</NavLink>
-            <NavLink to="/products">PRODUCTS</NavLink>
+            
+            <div className="relative group py-6">
+              <NavLink to="/products">PRODUCTS</NavLink>
+              
+              {/* Dropdown Menu */}
+              <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 transition-all duration-300 group-hover:visible border border-slate-100 mt-0 z-50">
+                <Link to="/products/bry-air" className="block px-5 py-3 hover:bg-slate-50 hover:text-primary text-slate-600 font-medium text-sm border-b border-slate-50 transition-colors">
+                  Bry-Air
+                </Link>
+                <Link to="/products/bms" className="block px-5 py-3 hover:bg-slate-50 hover:text-primary text-slate-600 font-medium text-sm border-b border-slate-50 transition-colors">
+                  Building Management System
+                </Link>
+                <Link to="/products" className="block px-5 py-3 hover:bg-slate-50 hover:text-primary text-slate-600 font-medium text-sm transition-colors">
+                  Other
+                </Link>
+              </div>
+            </div>
+
             <NavLink to="/projects">PROJECTS</NavLink>
             <NavLink to="/contact">CONTACT</NavLink>
             <Link
@@ -175,6 +192,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <NavLink to="/about" mobile onClick={() => setIsMenuOpen(false)}>ABOUT</NavLink>
               <NavLink to="/services" mobile onClick={() => setIsMenuOpen(false)}>SERVICES</NavLink>
               <NavLink to="/products" mobile onClick={() => setIsMenuOpen(false)}>PRODUCTS</NavLink>
+              <div className="pl-4">
+                <Link to="/products/bry-air" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium text-slate-600 block py-2">Bry-Air</Link>
+                <Link to="/products/bms" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium text-slate-600 block py-2">BMS</Link>
+              </div>
               <NavLink to="/projects" mobile onClick={() => setIsMenuOpen(false)}>PROJECTS</NavLink>
               <NavLink to="/contact" mobile onClick={() => setIsMenuOpen(false)}>CONTACT</NavLink>
               <Link
