@@ -23,7 +23,7 @@ export default function Projects() {
       title: "BMS Integration - Corporate Plaza",
       category: "SMART INFRASTRUCTURE",
       location: "KATHMANDU, NEPAL",
-      desc: "Advanced industrial automation using LOYTEC technology for integrated light control and energy monitoring.",
+      desc: "Advanced industrial automation for integrated light control and energy monitoring.",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
       tag: "AUTOMATION",
       border: "border-slate-900"

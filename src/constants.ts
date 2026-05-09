@@ -44,7 +44,7 @@ export const SERVICES = [
   {
     id: 'bms',
     title: 'Building Management (BMS)',
-    description: 'Highly integrated systems for energy efficiency and maintainability. LOYTEC certified solutions.',
+    description: 'Highly integrated systems for energy efficiency and maintainability.',
     icon: Building2,
     details: ['Room Automation', 'Lighting Control', 'Integrated Servers', 'Touch Panels']
   },
@@ -117,14 +117,14 @@ export const SUPPLIERS = [
 ];
 
 export const PARTNERS = [
-  'Bry-Air', 'Dwyer', 'Enviro Technologies', 'PMEA', 'P3Ductal', 'LOYTEC'
+  'Bry-Air', 'Dwyer', 'Enviro Technologies', 'PMEA', 'P3Ductal'
 ];
 
 export const SLIDES = [
   {
     id: 1,
     title: "Smart Building Automation & Control Solutions",
-    subtitle: "Experience the next level of energy efficiency and control with LOYTEC-based solutions.",
+    subtitle: "Experience the next level of energy efficiency and control.",
     image: "https://images.unsplash.com/photo-1563213126-a4273aed2016?q=80&w=2070&auto=format&fit=crop",
     cta: "Get Quote"
   },
