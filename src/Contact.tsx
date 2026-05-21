@@ -7,15 +7,94 @@ import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Send, Building2, Clock } from 'lucide-react';
 
 export default function Contact() {
+  const contacts = [
+    {
+      dept: "Purchase Department",
+      name: "Mr. Ajay Pd. Yadav",
+      role: "Senior Manager",
+      phone: "+977-9855072285",
+      email: "purchase@adityaengineering.com.np",
+      image: "/img/ajay.jpg"
+    },
+    {
+      dept: "Operations Department",
+      name: "Mrs. Samjhana Shrestha",
+      role: "Operations Manager",
+      phone: "+977-9855078285",
+      email: "sales@adityaengineering.com.np",
+      image: "/img/samjhana.jpeg"
+    },
+    {
+      dept: "Technical Department",
+      name: "Mr. Subash Gupta",
+      role: "Technical Director",
+      phone: "+977-9855078285",
+      email: "subash@adityaengineering.com.np",
+      image: "/img/Subash.jpeg"
+    }
+  ];
+
   return (
     <div className="pt-20 bg-white min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 md:px-10">
-        <header className="mb-20 py-24 space-y-4 text-center md:text-left">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 pb-32">
+        <header className="mb-16 py-24 space-y-4 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tighter uppercase">GET IN <span className="text-primary italic">TOUCH</span></h1>
           <p className="text-xl text-slate-600 max-w-2xl font-sans tracking-tight">
             Consult with our engineering experts to design your next pharmaceutical environment.
           </p>
         </header>
+
+        {/* Key Contacts */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          {contacts.map((contact, idx) => (
+            <motion.div 
+              key={contact.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="bg-slate-50 border border-slate-200 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group overflow-hidden"
+            >
+              <div className="flex flex-col items-center text-center space-y-6">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg relative group-hover:border-primary transition-colors duration-300">
+                  <img 
+                    src={import.meta.env.BASE_URL + contact.image.replace(/^\//, '')} 
+                    alt={contact.name} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="space-y-1">
+                  <span className="text-[10px] font-black text-primary uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">
+                    {contact.dept}
+                  </span>
+                  <h3 className="text-xl font-extrabold text-slate-900 mt-4 tracking-tight">
+                    {contact.name}
+                  </h3>
+                  <p className="text-xs font-bold text-slate-500 uppercase tracking-widest pt-1">
+                    {contact.role}
+                  </p>
+                </div>
+                
+                <div className="w-full h-px bg-slate-200 my-4" />
+                
+                <div className="space-y-4 w-full">
+                  <a href={`tel:${contact.phone}`} className="flex items-center gap-4 text-slate-600 hover:text-primary transition-colors group/link p-2 -mx-2 rounded-lg hover:bg-white text-sm font-bold tracking-wider">
+                    <div className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white group-hover/link:border-primary transition-colors">
+                      <Phone size={16} />
+                    </div>
+                    {contact.phone}
+                  </a>
+                  <a href={`mailto:${contact.email}`} className="flex items-center gap-4 text-slate-600 hover:text-primary transition-colors group/link p-2 -mx-2 rounded-lg hover:bg-white text-sm font-bold tracking-wider relative">
+                    <div className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover/link:bg-primary group-hover/link:text-white group-hover/link:border-primary transition-colors shrink-0">
+                      <Mail size={16} />
+                    </div>
+                    <span className="truncate">{contact.email}</span>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-px bg-slate-200 border border-slate-200">
           {/* Info Side */}
