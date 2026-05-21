@@ -5,21 +5,25 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Quote, Building2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Quote, Building2, X } from 'lucide-react';
 import { SLIDES, SERVICES, SUPPLIERS, PARTNERS } from './constants';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
+  const [selectedSlideContent, setSelectedSlideContent] = useState<typeof SLIDES[0] | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % SLIDES.length);
+      if (!selectedSlideContent) {
+        setCurrent((prev) => (prev + 1) % SLIDES.length);
+      }
     }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [selectedSlideContent]);
 
   return (
+    <>
     <section className="relative h-[80vh] md:h-screen w-full overflow-hidden bg-slate-900" style={{ perspective: '1200px' }}>
       <AnimatePresence>
         <motion.div
@@ -31,7 +35,7 @@ const Hero = () => {
           className="absolute inset-0 origin-center"
           style={{ transformStyle: 'preserve-3d' }}
         >
-          <div className="absolute inset-0 bg-black/40 z-10" />
+          <div className="absolute inset-0 bg-black/50 z-10" />
           <img
             src={SLIDES[current].image}
             alt={SLIDES[current].title}
@@ -40,8 +44,8 @@ const Hero = () => {
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 z-20 flex flex-col justify-center px-4 md:px-0">
-        <div className="max-w-7xl mx-auto w-full">
+      <div className="absolute inset-0 z-20 flex flex-col justify-center px-4 md:px-0 pointer-events-none">
+        <div className="max-w-7xl mx-auto w-full pointer-events-auto">
           <AnimatePresence mode="wait">
             <motion.div
               key={current}
@@ -51,22 +55,31 @@ const Hero = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="max-w-3xl space-y-6 md:space-y-8"
             >
-            <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
+            <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight drop-shadow-lg">
               {SLIDES[current].title}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed max-w-2xl drop-shadow-md">
               {SLIDES[current].subtitle}
             </p>
             <div className="flex flex-wrap gap-4 pt-6">
-              <Link
-                to="/services"
-                className="bg-primary text-white px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition-all shadow-lg text-lg uppercase tracking-wider"
-              >
-                Our Reach
-              </Link>
+              {SLIDES[current].description ? (
+                <button
+                  onClick={() => setSelectedSlideContent(SLIDES[current])}
+                  className="bg-primary text-white px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition-all shadow-lg text-lg uppercase tracking-wider cursor-pointer"
+                >
+                  {SLIDES[current].cta || 'Learn More'}
+                </button>
+              ) : (
+                <Link
+                  to="/services"
+                  className="bg-primary text-white px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition-all shadow-lg text-lg uppercase tracking-wider"
+                >
+                  {SLIDES[current].cta || 'Our Reach'}
+                </Link>
+              )}
               <Link
                 to="/contact"
-                className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold hover:bg-white/20 transition-all text-lg uppercase tracking-wider"
+                className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold hover:bg-white/20 transition-all shadow-lg text-lg uppercase tracking-wider"
               >
                 Contact Us
               </Link>
@@ -88,6 +101,68 @@ const Hero = () => {
         ))}
       </div>
     </section>
+
+    {/* Hero Modal */}
+    <AnimatePresence>
+      {selectedSlideContent && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
+          onClick={() => setSelectedSlideContent(null)}
+        >
+          <motion.div
+            initial={{ scale: 0.9, y: 20, opacity: 0 }}
+            animate={{ scale: 1, y: 0, opacity: 1 }}
+            exit={{ scale: 0.9, y: 20, opacity: 0 }}
+            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+            className="bg-white rounded-2xl overflow-hidden w-full max-w-4xl shadow-2xl relative flex flex-col md:flex-row"
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedSlideContent(null)}
+              className="absolute top-4 right-4 z-10 bg-black/20 hover:bg-black/80 text-white rounded-full p-2 backdrop-blur-md transition-colors"
+              aria-label="Close details"
+            >
+              <X size={20} />
+            </button>
+            
+            <div className="md:w-1/2 h-64 md:h-auto relative">
+                <img 
+                  src={selectedSlideContent.image} 
+                  alt={selectedSlideContent.title} 
+                  className="w-full h-full object-cover" 
+                />
+            </div>
+
+            <div className="md:w-1/2 p-8 md:p-12 bg-white flex flex-col justify-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 leading-tight">
+                  {selectedSlideContent.title}
+                </h2>
+                <h4 className="text-lg font-medium text-slate-500 mb-6 border-b pb-4">
+                  {selectedSlideContent.subtitle}
+                </h4>
+                
+                <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed font-light mb-8">
+                  {selectedSlideContent.description}
+                </div>
+                
+                <div className="mt-auto flex justify-start">
+                  <Link 
+                    to="/contact" 
+                    className="inline-flex items-center justify-center gap-2 py-3 px-8 bg-primary text-white hover:bg-blue-700 font-bold rounded-xl transition-all shadow-md hover:shadow-lg uppercase tracking-wider"
+                    onClick={() => setSelectedSlideContent(null)}
+                  >
+                    Get in touch
+                  </Link>
+                </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+    </>
   );
 };
 

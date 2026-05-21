@@ -33,7 +33,7 @@ export default function ProductDetails() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                src={[import.meta.env.BASE_URL.replace(/\/$/, ''), product.image.replace(/^\//, '')].join('/')}
+                src={encodeURI([import.meta.env.BASE_URL.replace(/\/$/, ''), product.image.replace(/^\//, '')].join('/'))}
                 alt={product.title}
                 className="max-w-full max-h-[500px] object-contain mix-blend-multiply"
               />

@@ -123,15 +123,17 @@ export const PARTNERS = [
 export const SLIDES = [
   {
     id: 1,
-    title: "Smart Building Automation & Control Solutions",
-    subtitle: "Experience the next level of energy efficiency and control.",
-    image: "https://images.unsplash.com/photo-1563213126-a4273aed2016?q=80&w=2070&auto=format&fit=crop",
-    cta: "Get Quote"
+    title: "Motorized Mobile Storage Systems",
+    subtitle: "Manufacturer, Supplier & Exporter of advanced space optimization solutions.",
+    description: "We are Manufacturer, Supplier, Exporter of Motorized Mobile Storage Systems, Mobile Racking Systems, Mobile Compactors. With ability to store as high as 150 tons in a single mobile unit, this products leaves others far behind in space optimization.",
+    image: "/img/motorized_storage.png",
+    cta: "Learn More"
   },
   {
     id: 2,
     title: "Pharma Engineering Excellence",
     subtitle: "Devoted to the Pharma Industry with turnkey solutions from design to validation.",
+    description: "Our pharma engineering team provides start-to-finish solutions including custom designing, manufacturing, and complete validation of critical pharmaceutical equipment.",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
     cta: "Our Expertise"
   },
@@ -139,6 +141,7 @@ export const SLIDES = [
     id: 3,
     title: "Clean Room & HVAC Experts",
     subtitle: "Providing robust and sustainable foundations for diverse pharmaceutical projects.",
+    description: "We deliver turnkey clean room and HVAC solutions with unparalleled standards, focusing on rigorous particulate control and consistent thermal management for critical environments.",
     image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop",
     cta: "Learn More"
   },
@@ -146,6 +149,7 @@ export const SLIDES = [
     id: 4,
     title: "Advanced Sensor Technology",
     subtitle: "High precision monitoring for humidity, temperature, and differential pressure.",
+    description: "Equip your facility with state-of-the-art sensors that provide real-time, high-precision monitoring of environmental variables seamlessly integrated with your control systems.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
     cta: "View Products"
   },
@@ -153,6 +157,7 @@ export const SLIDES = [
     id: 5,
     title: "Integrated BMS Solutions",
     subtitle: "Seamless integration of HVAC, Lighting, and Access Control via L-WEB systems.",
+    description: "Our integrated Building Management Systems centralize control of HVAC, lighting, and security to maximize energy efficiency and operational simplicity.",
     image: "https://images.unsplash.com/photo-1558444479-c84825927ad3?q=80&w=2070&auto=format&fit=crop",
     cta: "Technology"
   },
@@ -160,6 +165,7 @@ export const SLIDES = [
     id: 6,
     title: "Innovative Industrial Controls",
     subtitle: "Empowering technological support for Nepal's growing industrial sector.",
+    description: "We provide innovative and robust industrial control mechanisms specifically tailored to support and advance the rapidly growing industrial sector in Nepal.",
     image: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=2070&auto=format&fit=crop",
     cta: "Contact Us"
   }

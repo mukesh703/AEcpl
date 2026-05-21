@@ -215,7 +215,7 @@ export default function Products() {
                 {/* Embedded image container matching the gray rounded rectangle look */}
                 <div className="h-48 w-full bg-[#f8f9fc] rounded-lg overflow-hidden relative mb-5 flex items-center justify-center p-4">
                   <img 
-                    src={[import.meta.env.BASE_URL.replace(/\/$/, ''), item.image.replace(/^\//, '')].join('/')} 
+                    src={encodeURI([import.meta.env.BASE_URL.replace(/\/$/, ''), item.image.replace(/^\//, '')].join('/'))} 
                     alt={item.title} 
                     className="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" 
                   />

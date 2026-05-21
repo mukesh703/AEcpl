@@ -27,7 +27,7 @@ export default function BryAir() {
             <div className="relative h-64 mt-20">
               {/* Image graphic container */}
               <div className="absolute left-0 bottom-0 max-w-[80%] z-10">
-                 <img src={[import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/')} alt="Dehumidifiers" className="h-48 object-contain" />
+                 <img src={encodeURI([import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/'))} alt="Dehumidifiers" className="h-48 object-contain" />
               </div>
               
               <div className="absolute top-[-30px] right-0 bg-white/50 backdrop-blur-sm p-4 max-w-[200px] z-20">
@@ -37,7 +37,7 @@ export default function BryAir() {
               
               {/* Badge elements */}
               <div className="absolute bottom-16 right-0 z-20 flex flex-col items-center">
-                 <img src={[import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/')} alt="Bry-Air" className="h-20 object-contain mix-blend-multiply" />
+                 <img src={encodeURI([import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/'))} alt="Bry-Air" className="h-20 object-contain mix-blend-multiply" />
                  <h3 className="font-bold text-xl mt-2">Bry-Air<span className="text-xs font-normal align-top">®</span></h3>
                  <h4 className="font-black text-2xl">Dehumidifiers</h4>
               </div>
@@ -92,7 +92,7 @@ export default function BryAir() {
               <div className="text-[#E61C24] font-medium text-lg italic tracking-wider mb-2 pr-20">Moisture in...</div>
               <div className="flex items-center">
                  <div className="h-[2px] w-32 bg-gray-400 opacity-50 mr-4"></div>
-                 <img src={[import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/')} alt="Bry-Air" className="h-24 md:h-32 object-contain mix-blend-multiply filter contrast-125 z-20 relative drop-shadow-xl" />
+                 <img src={encodeURI([import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/'))} alt="Bry-Air" className="h-24 md:h-32 object-contain mix-blend-multiply filter contrast-125 z-20 relative drop-shadow-xl" />
                  <div className="text-[#0186D5] font-medium text-lg italic tracking-wider ml-4 mt-8">Dry air out</div>
               </div>
               <div className="bg-[#E61C24] text-white font-black px-6 py-3 text-sm md:text-base leading-tight text-center relative z-20 mt-4 shadow-xl">
@@ -109,7 +109,7 @@ export default function BryAir() {
              <h3 className="text-2xl md:text-[28px] font-bold text-gray-900 mb-1 leading-tight tracking-tight">Desiccant Dehumidification</h3>
              <p className="text-gray-800 text-[18px]">for humidity control & drying</p>
              <div className="mt-8 relative mr-12">
-                <img src={[import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/')} alt="Dehumidifier" className="h-32 md:h-48 object-contain mix-blend-multiply" />
+                <img src={encodeURI([import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Dihumdifier.png'].join('/'))} alt="Dehumidifier" className="h-32 md:h-48 object-contain mix-blend-multiply" />
                 <div className="absolute right-0 top-0 bg-[#E61C24] text-white font-black px-3 py-2 rounded-[24px] transform -rotate-[20deg] star-burst text-sm">
                   New
                 </div>
@@ -173,7 +173,7 @@ function ProductCard({ title, desc, isNew = false }: { title: string, desc: Reac
 
       <div className="mt-auto pt-6 w-full flex items-center justify-center relative z-0">
          <img 
-            src={[import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Chiller and Heat Pump.png'].join('/')} 
+            src={encodeURI([import.meta.env.BASE_URL.replace(/\/$/, ''), 'img/Product/HVAC High Side/Chiller and Heat Pump.png'].join('/'))} 
             alt={title} 
             className="max-h-40 object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" 
          />
