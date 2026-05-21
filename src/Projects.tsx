@@ -8,9 +8,9 @@ import { ExternalLink, Layers, Building2, Wind, ArrowRight, ChevronLeft, Chevron
 import { useState, useEffect } from 'react';
 
 const PROJECT_SLIDES = [
-  "https://images.unsplash.com/photo-1504307651254-35680f356bfd?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop"
+  "/img/Services/clean room display.jpg",
+  "/img/Services/Process Engineering.jpg",
+  "/img/Services/Site Management.webp"
 ];
 
 export default function Projects() {
@@ -33,7 +33,7 @@ export default function Projects() {
       category: "TURNKEY",
       location: "MULTIPLE LOCATIONS",
       desc: "Complete end-to-end design, implementation, and qualification of critical pharmaceutical manufacturing facilities.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+      image: "/img/Services/Detailed Engineering .jpg",
       tag: "COMPLETED",
       clients: ["Nepal Pharma", "Lyka Pharma", "Nepal Remedies", "SR Drug", "QbD Pharmaceutical", "Shivam Pharma", "Elixir Life Science", "Divine", "Medrik", "Nova Pharma", "Lomus Pharma"]
     },
@@ -42,7 +42,7 @@ export default function Projects() {
       category: "HVAC",
       location: "MULTIPLE LOCATIONS",
       desc: "High-capacity chiller modules, boiler plant controls, and robust environmental management systems for strategic manufacturing.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop",
+      image: "/img/Services/HVAC High Slide.jpg",
       tag: "COMPLETED",
       clients: ["Quest Pharma", "Maruti Pharma", "Multicare"]
     },
@@ -51,7 +51,7 @@ export default function Projects() {
       category: "BMS",
       location: "VARIOUS FACILITIES",
       desc: "Advanced industrial automation for integrated HVAC, light control, and real-time energy monitoring systems.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+      image: "/img/Services/BMS & EMS.jpg",
       tag: "AUTOMATION",
       clients: []
     },
@@ -60,7 +60,7 @@ export default function Projects() {
       category: "CLEAN ROOM",
       location: "VARIOUS FACILITIES",
       desc: "Full installation of highly controlled clean room environments, strict particulate control, and specialized panel integrations.",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop",
+      image: "/img/Services/clean room partition.jpg",
       tag: "CRITICAL",
       clients: []
     }
@@ -88,7 +88,7 @@ export default function Projects() {
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentSlide}
-                src={PROJECT_SLIDES[currentSlide]}
+                src={PROJECT_SLIDES[currentSlide].startsWith('http') ? PROJECT_SLIDES[currentSlide] : import.meta.env.BASE_URL + PROJECT_SLIDES[currentSlide].replace(/^\//, '')}
                 initial={{ opacity: 0, scale: 1.05 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
@@ -180,7 +180,7 @@ export default function Projects() {
                 {/* Image Side */}
                 <div className={`w-full md:w-1/2 mt-6 md:mt-0 ${idx % 2 === 0 ? 'md:pl-16 lg:pl-24' : 'md:pr-16 lg:pr-24'}`}>
                   <div className="relative overflow-hidden aspect-[4/3] rounded-2xl grayscale group-hover:grayscale-0 shadow-lg group-hover:shadow-2xl transition-all duration-700 bg-slate-200">
-                    <img src={p.image} alt={p.title} className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 mix-blend-multiply group-hover:mix-blend-normal" />
+                    <img src={p.image.startsWith('http') ? p.image : import.meta.env.BASE_URL + p.image.replace(/^\//, '')} alt={p.title} className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 mix-blend-multiply group-hover:mix-blend-normal" />
                     <div className="absolute top-6 left-6 z-10">
                       <span className="bg-slate-900/90 backdrop-blur-sm text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest rounded-full shadow-xl">
                         {p.tag}
@@ -221,7 +221,7 @@ export default function Projects() {
               
               <div className="md:w-1/2 h-64 md:h-auto overflow-hidden relative group">
                 <img 
-                  src={selectedProject.image} 
+                  src={selectedProject.image.startsWith('http') ? selectedProject.image : import.meta.env.BASE_URL + selectedProject.image.replace(/^\//, '')} 
                   alt={selectedProject.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
                 />
