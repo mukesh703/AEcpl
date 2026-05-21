@@ -37,7 +37,7 @@ const Hero = () => {
         >
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src={SLIDES[current].image}
+            src={SLIDES[current].image.startsWith('http') ? SLIDES[current].image : import.meta.env.BASE_URL + SLIDES[current].image.replace(/^\//, '')}
             alt={SLIDES[current].title}
             className="w-full h-full object-cover"
           />
@@ -130,7 +130,7 @@ const Hero = () => {
             
             <div className="md:w-1/2 h-64 md:h-auto relative">
                 <img 
-                  src={selectedSlideContent.image} 
+                  src={selectedSlideContent.image.startsWith('http') ? selectedSlideContent.image : import.meta.env.BASE_URL + selectedSlideContent.image.replace(/^\//, '')} 
                   alt={selectedSlideContent.title} 
                   className="w-full h-full object-cover" 
                 />

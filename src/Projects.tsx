@@ -8,7 +8,7 @@ import { ExternalLink, Layers, Building2, Wind, ArrowRight, ChevronLeft, Chevron
 import { useState, useEffect } from 'react';
 
 const PROJECT_SLIDES = [
-  "https://images.unsplash.com/photo-1541888087425-ce81dc8caa40?q=80&w=2070&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1504307651254-35680f356bfd?q=80&w=2070&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop"
 ];
