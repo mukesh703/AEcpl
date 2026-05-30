@@ -6,7 +6,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Target, Eye, Heart, ShieldCheck, Zap, Users, ChevronLeft, ChevronRight } from 'lucide-react';
-import { INDUSTRY_LEADERS } from './constants';
+import { INDUSTRY_LEADERS, OTHER_INDUSTRIES_CLIENTS } from './constants';
 
 export default function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -224,6 +224,36 @@ export default function About() {
                   className="max-h-16 max-w-full object-contain transition-all duration-500 hover:scale-110"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(leader.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
+                  }}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        {/* Other Industries Client - Logo Grid Section */}
+        <section className="mb-32 text-center">
+          <div className="max-w-3xl mx-auto mb-16 space-y-4">
+            <h3 className="text-3xl md:text-5xl font-bold text-slate-900">Other Industries Client</h3>
+            <p className="text-slate-500 font-sans text-lg">Proudly extending our expertise to a diverse range of industries.</p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8">
+            {OTHER_INDUSTRIES_CLIENTS.map((client, idx) => (
+              <motion.div
+                key={client.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05 }}
+                className="group p-6 rounded-2xl bg-white border border-slate-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[120px]"
+              >
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="max-h-16 max-w-full object-contain transition-all duration-500 hover:scale-110"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(client.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`;
                   }}
                 />
               </motion.div>

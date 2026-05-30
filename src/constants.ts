@@ -103,6 +103,9 @@ export const INDUSTRY_LEADERS = [
   { name: 'Client 13', logo: './logos/Client/13.jpg' },
   { name: 'Client 14', logo: './logos/Client/14.jpg' },
   { name: 'Client 15', logo: './logos/Client/15.jpg' },
+  { name: 'Client 16', logo: './img/16.jpg' },
+  { name: 'Client 17', logo: './img/17.jpg' },
+  { name: 'Client 18', logo: './img/18.jpg' },
 ];
 
 export const SUPPLIERS = [
@@ -114,6 +117,15 @@ export const SUPPLIERS = [
   { name: 'Supplier 6', logo: './logos/Suppliers/6.jpg' },
   { name: 'Supplier 7', logo: './logos/Suppliers/7.jpg' },
   { name: 'Supplier 8', logo: './logos/Suppliers/8.jpg' },
+];
+
+export const OTHER_INDUSTRIES_CLIENTS = [
+  { name: 'Other Industry Client 1', logo: './other-industries/1.jpg' },
+  { name: 'Other Industry Client 2', logo: './other-industries/2.png' },
+  { name: 'Other Industry Client 3', logo: './other-industries/3.jpeg' },
+  { name: 'Other Industry Client 4', logo: './other-industries/4.png' },
+  { name: 'Other Industry Client 5', logo: './other-industries/5.jpg' },
+  { name: 'Other Industry Client 6', logo: './other-industries/6.jpg' },
 ];
 
 export const PARTNERS = [
@@ -131,14 +143,22 @@ export const SLIDES = [
   },
   {
     id: 2,
-    title: "Pharma Engineering Excellence",
-    subtitle: "Devoted to the Pharma Industry with turnkey solutions from design to validation.",
-    description: "Our pharma engineering team provides start-to-finish solutions including custom designing, manufacturing, and complete validation of critical pharmaceutical equipment.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-    cta: "Our Expertise"
+    title: "Compact Racking System",
+    subtitle: "High-density mobile racking for intelligent space utilization and maximum storage capacity.",
+    description: "Our Compact Racking Systems offer optimal space utilization by eliminating idle aisles. These high-density mobile racking systems are designed to maximize storage capacity in warehouses and industrial facilities, providing a robust and efficient storage solution.",
+    image: "/img/compact storage system.jpg",
+    cta: "Learn More"
   },
   {
     id: 3,
+    title: "Pharma Engineering Excellence",
+    subtitle: "Devoted to the Pharma Industry with turnkey solutions from design to validation.",
+    description: "Our pharma engineering team provides start-to-finish solutions including custom designing, manufacturing, and complete validation of critical pharmaceutical equipment.",
+    image: "/img/pharma engineering.png",
+    cta: "Our Expertise"
+  },
+  {
+    id: 4,
     title: "Clean Room & HVAC Experts",
     subtitle: "Providing robust and sustainable foundations for diverse pharmaceutical projects.",
     description: "We deliver turnkey clean room and HVAC solutions with unparalleled standards, focusing on rigorous particulate control and consistent thermal management for critical environments.",
@@ -146,7 +166,7 @@ export const SLIDES = [
     cta: "Learn More"
   },
   {
-    id: 4,
+    id: 5,
     title: "Advanced Sensor Technology",
     subtitle: "High precision monitoring for humidity, temperature, and differential pressure.",
     description: "Equip your facility with state-of-the-art sensors that provide real-time, high-precision monitoring of environmental variables seamlessly integrated with your control systems.",
@@ -154,7 +174,7 @@ export const SLIDES = [
     cta: "View Products"
   },
   {
-    id: 5,
+    id: 6,
     title: "Integrated BMS Solutions",
     subtitle: "Seamless integration of HVAC, Lighting, and Access Control via L-WEB systems.",
     description: "Our integrated Building Management Systems centralize control of HVAC, lighting, and security to maximize energy efficiency and operational simplicity.",
@@ -162,7 +182,7 @@ export const SLIDES = [
     cta: "Technology"
   },
   {
-    id: 6,
+    id: 7,
     title: "Innovative Industrial Controls",
     subtitle: "Empowering technological support for Nepal's growing industrial sector.",
     description: "We provide innovative and robust industrial control mechanisms specifically tailored to support and advance the rapidly growing industrial sector in Nepal.",

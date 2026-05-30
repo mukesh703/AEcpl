@@ -35,7 +35,15 @@ export default function Projects() {
       desc: "Complete end-to-end design, implementation, and qualification of critical pharmaceutical manufacturing facilities.",
       image: "/img/Services/Detailed Engineering .jpg",
       tag: "COMPLETED",
-      clients: ["Nepal Pharma", "Lyka Pharma", "Nepal Remedies", "SR Drug", "QbD Pharmaceutical", "Shivam Pharma", "Elixir Life Science", "Divine", "Medrik", "Nova Pharma", "Lomus Pharma"]
+      clients: [
+        { name: "Lyka Pharma", logo: "/logos/lyka.png" },
+        { name: "Nepal Pharma", logo: "/logos/npl.png" },
+        { name: "Nepal Remedies", logo: "/logos/Client/5.jpg" },
+        { name: "SR Drug", logo: "/logos/Client/6.jpg" },
+        { name: "Ohm Pharma", logo: "/logos/Client/9.jpg" },
+        { name: "Maruti Pharma", logo: "/logos/maruti.png" },
+        { name: "Multicare", logo: "/logos/Client/11.jpg" }
+      ]
     },
     {
       title: "HVAC High Side",
@@ -44,7 +52,14 @@ export default function Projects() {
       desc: "High-capacity chiller modules, boiler plant controls, and robust environmental management systems for strategic manufacturing.",
       image: "/img/Services/HVAC High Slide.jpg",
       tag: "COMPLETED",
-      clients: ["Quest Pharma", "Maruti Pharma", "Multicare"]
+      clients: [
+        { name: "Lyka Pharma", logo: "/logos/lyka.png" },
+        { name: "Nepal Pharma", logo: "/logos/npl.png" },
+        { name: "Maruti Pharma", logo: "/logos/maruti.png" },
+        { name: "Multicare", logo: "/logos/Client/11.jpg" },
+        { name: "Pharmaonics", logo: "/logos/Client/7.jpg" },
+        { name: "Om Pharma", logo: "/logos/Client/9.jpg" }
+      ]
     },
     {
       title: "BMS Integration",
@@ -53,7 +68,10 @@ export default function Projects() {
       desc: "Advanced industrial automation for integrated HVAC, light control, and real-time energy monitoring systems.",
       image: "/img/Services/BMS & EMS.jpg",
       tag: "AUTOMATION",
-      clients: []
+      clients: [
+        { name: "Om Pharma", logo: "/logos/Client/9.jpg" },
+        { name: "Multicare", logo: "/logos/Client/11.jpg" }
+      ]
     },
     {
       title: "Clean Room Setup",
@@ -62,7 +80,22 @@ export default function Projects() {
       desc: "Full installation of highly controlled clean room environments, strict particulate control, and specialized panel integrations.",
       image: "/img/Services/clean room partition.jpg",
       tag: "CRITICAL",
-      clients: []
+      clients: [
+        { name: "Lyka Pharma", logo: "/logos/lyka.png" },
+        { name: "Nepal Remedies", logo: "/logos/Client/5.jpg" }
+      ]
+    },
+    {
+      title: "Storage System",
+      category: "STORAGE",
+      location: "VARIOUS FACILITIES",
+      desc: "High-capacity motorized mobile storage and racking systems for optimal space utilization in modern pharmaceutical environments.",
+      image: "/img/motorized_storage.png",
+      tag: "COMPLETED",
+      clients: [
+        { name: "Quest Pharma", logo: "/logos/quest.png" },
+        { name: "Nepal Pharma", logo: "/logos/npl.png" }
+      ]
     }
   ];
 
@@ -251,11 +284,23 @@ export default function Projects() {
                   {selectedProject.clients && selectedProject.clients.length > 0 && (
                     <div className="pt-8 border-t border-slate-100">
                       <h4 className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Key Clients</h4>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                         {selectedProject.clients.map((client) => (
-                          <span key={client} className="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 text-sm font-medium rounded-full hover:bg-slate-100 transition-colors cursor-default">
-                            {client}
-                          </span>
+                          <div key={client.name} title={client.name} className="group p-4 md:p-6 rounded-2xl bg-white border border-slate-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[100px] md:min-h-[120px]">
+                            {client.logo ? (
+                              <img 
+                                src={client.logo.startsWith('http') ? client.logo : import.meta.env.BASE_URL + client.logo.replace(/^\//, '')} 
+                                alt={client.name} 
+                                className="max-h-12 md:max-h-16 max-w-full object-contain transition-transform duration-500 hover:scale-110" 
+                              />
+                            ) : (
+                              <img 
+                                src={`https://ui-avatars.com/api/?name=${encodeURIComponent(client.name)}&background=f1f5f9&color=1b3281&font-size=0.33&length=2`} 
+                                alt={client.name} 
+                                className="max-h-12 md:max-h-16 max-w-full object-contain rounded-full transition-transform duration-500 hover:scale-110" 
+                              />
+                            )}
+                          </div>
                         ))}
                       </div>
                     </div>

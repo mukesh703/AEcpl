@@ -19,10 +19,15 @@ const PRODUCT_CATEGORIES = [
   'Clean Room Display',
   'Sensor Technology',
   'SS Equipment & Furniture',
-  'Spare Division'
+  'Spare Division',
+  'Storage System'
 ];
 
 export const CATALOG_ITEMS = [
+  // Storage System
+  { title: "Motorized Racking Systems", category: "Storage System", image: "/img/motorized_storage.png" },
+  { title: "Compact Racking System", category: "Storage System", image: "/img/compact storage system.jpg" },
+
   // HVAC High Side
   { title: "Cooling Tower", category: "HVAC High Side", image: "/img/Product/HVAC High Side/Cooing Tower.png" },
   { title: "Chiller & Heat Pump", category: "HVAC High Side", image: "/img/Product/HVAC High Side/Chiller and Heat Pump.png" },

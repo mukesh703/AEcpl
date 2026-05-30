@@ -9,28 +9,28 @@ import { Phone, Mail, MapPin, Send, Building2, Clock } from 'lucide-react';
 export default function Contact() {
   const contacts = [
     {
-      dept: "Purchase Department",
-      name: "Mr. Ajay Pd. Yadav",
-      role: "Senior Manager",
+      dept: "Technical Department",
+      name: "Mr. Subash Gupta",
+      role: "Technical Director",
       phone: "+977-9855072285",
-      email: "purchase@adityaengineering.com.np",
-      image: "/img/ajay.jpg"
+      email: "subash@adityaengineering.com.np",
+      image: "/img/Subash.jpeg"
     },
     {
       dept: "Operations Department",
       name: "Mrs. Samjhana Shrestha",
       role: "Operations Manager",
-      phone: "+977-9855078285",
+      phone: "+977-9851358709",
       email: "sales@adityaengineering.com.np",
       image: "/img/samjhana.jpeg"
     },
     {
-      dept: "Technical Department",
-      name: "Mr. Subash Gupta",
-      role: "Technical Director",
-      phone: "+977-9855078285",
-      email: "subash@adityaengineering.com.np",
-      image: "/img/Subash.jpeg"
+      dept: "Purchase Department",
+      name: "Mr. Ajay Pd. Yadav",
+      role: "Senior Manager",
+      phone: "+977-9855072285",
+      email: "ajay@adityaengineering.com.np",
+      image: "/img/ajay-pd-yadav.jpg"
     }
   ];
 
@@ -129,6 +129,7 @@ export default function Contact() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em]">Support</p>
                   <p className="text-base font-bold text-slate-900 leading-tight break-all">adityaengineering@outlook.com</p>
+                  <p className="text-base font-bold text-slate-900 leading-tight break-all">subash@adityaengineering.com.np</p>
                   <p className="text-[10px] font-medium text-slate-400 mt-2 tracking-widest uppercase">www.adityaengineering.com.np</p>
                 </div>
               </div>
@@ -145,22 +146,23 @@ export default function Contact() {
 
           {/* Form Side */}
           <div className="lg:col-span-7 bg-slate-50 p-10 md:p-16">
-            <form className="space-y-6">
+            <form action="https://formsubmit.co/adityaengineering@outlook.com" method="POST" className="space-y-6">
+              <input type="hidden" name="_subject" value="New Inquiry from Website" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" placeholder="FULL NAME" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
-                <input type="email" placeholder="BUSINESS EMAIL" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
+                <input type="text" name="name" placeholder="FULL NAME" required className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
+                <input type="email" name="email" placeholder="BUSINESS EMAIL" required className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" placeholder="COMPANY" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
-                <select className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm appearance-none">
-                  <option>INQUIRY TYPE</option>
-                  <option>BMS & AUTOMATION</option>
-                  <option>HVAC SOLUTIONS</option>
-                  <option>CLEAN ROOM BUILD</option>
+                <input type="text" name="company" placeholder="COMPANY" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
+                <select name="inquiry_type" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm appearance-none">
+                  <option value="General">INQUIRY TYPE</option>
+                  <option value="BMS & AUTOMATION">BMS & AUTOMATION</option>
+                  <option value="HVAC SOLUTIONS">HVAC SOLUTIONS</option>
+                  <option value="CLEAN ROOM BUILD">CLEAN ROOM BUILD</option>
                 </select>
               </div>
-              <textarea rows={6} placeholder="SPECIFICATION DETAILS" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
-              <button className="w-full btn-primary py-5 text-base shadow-xl shadow-primary/10 uppercase tracking-[0.3em]">
+              <textarea name="message" rows={6} placeholder="SPECIFICATION DETAILS" required className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
+              <button type="submit" className="w-full btn-primary py-5 text-base shadow-xl shadow-primary/10 uppercase tracking-[0.3em]">
                 SUBMIT FOR REVIEW
               </button>
             </form>
