@@ -22,7 +22,7 @@ export default function Contact() {
       role: "Operations Manager",
       phone: "+977-9851358709",
       email: "sales@adityaengineering.com.np",
-      image: "./img/samjhana.jpeg"
+      image: "./img/samjhana_new.jpg"
     },
     {
       dept: "Purchase Department",
@@ -60,7 +60,7 @@ export default function Contact() {
                   <img 
                     src={import.meta.env.BASE_URL + contact.image.replace(/^\//, '')} 
                     alt={contact.name} 
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover ${contact.name.includes('Samjhana') ? 'object-top' : ''}`}
                   />
                 </div>
                 <div className="space-y-1">

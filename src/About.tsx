@@ -72,12 +72,12 @@ export default function About() {
     {
       name: "Ajay Pd. Yadav",
       role: "Senior Manager",
-      image: "./img/ajay.jpg",
+      image: "./img/ajay-pd-yadav.jpg",
     },
     {
       name: "Samjhana Shrestha",
       role: "Operation Manager",
-      image: "./img/samjhana.jpeg",
+      image: "./img/samjhana_new.jpg",
     },
   ];
 
@@ -342,7 +342,7 @@ export default function About() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover ${member.name.includes('Samjhana') ? 'object-top' : ''}`}
                   />
                 </div>
                 <div className="space-y-2">
