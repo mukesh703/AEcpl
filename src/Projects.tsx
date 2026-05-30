@@ -8,9 +8,9 @@ import { ExternalLink, Layers, Building2, Wind, ArrowRight, ChevronLeft, Chevron
 import { useState, useEffect } from 'react';
 
 const PROJECT_SLIDES = [
-  "/img/Services/clean room display.jpg",
-  "/img/Services/Process Engineering.jpg",
-  "/img/Services/Site Management.webp"
+  "./img/Services/clean room display.jpg",
+  "./img/Services/Process Engineering.jpg",
+  "./img/Services/Site Management.webp"
 ];
 
 export default function Projects() {
@@ -33,16 +33,16 @@ export default function Projects() {
       category: "TURNKEY",
       location: "MULTIPLE LOCATIONS",
       desc: "Complete end-to-end design, implementation, and qualification of critical pharmaceutical manufacturing facilities.",
-      image: "/img/Services/Detailed Engineering .jpg",
+      image: "./img/Services/Detailed Engineering .jpg",
       tag: "COMPLETED",
       clients: [
-        { name: "Lyka Pharma", logo: "/logos/lyka.png" },
-        { name: "Nepal Pharma", logo: "/logos/npl.png" },
-        { name: "Nepal Remedies", logo: "/logos/Client/5.jpg" },
-        { name: "SR Drug", logo: "/logos/Client/6.jpg" },
-        { name: "Ohm Pharma", logo: "/logos/Client/9.jpg" },
-        { name: "Maruti Pharma", logo: "/logos/maruti.png" },
-        { name: "Multicare", logo: "/logos/Client/11.jpg" }
+        { name: "Lyka Pharma", logo: "./logos/lyka.png" },
+        { name: "Nepal Pharma", logo: "./logos/npl.png" },
+        { name: "Nepal Remedies", logo: "./logos/Client/5.jpg" },
+        { name: "SR Drug", logo: "./logos/Client/6.jpg" },
+        { name: "Ohm Pharma", logo: "./logos/Client/9.jpg" },
+        { name: "Maruti Pharma", logo: "./logos/maruti.png" },
+        { name: "Multicare", logo: "./logos/Client/11.jpg" }
       ]
     },
     {
@@ -50,15 +50,15 @@ export default function Projects() {
       category: "HVAC",
       location: "MULTIPLE LOCATIONS",
       desc: "High-capacity chiller modules, boiler plant controls, and robust environmental management systems for strategic manufacturing.",
-      image: "/img/Services/HVAC High Slide.jpg",
+      image: "./img/Services/HVAC High Slide.jpg",
       tag: "COMPLETED",
       clients: [
-        { name: "Lyka Pharma", logo: "/logos/lyka.png" },
-        { name: "Nepal Pharma", logo: "/logos/npl.png" },
-        { name: "Maruti Pharma", logo: "/logos/maruti.png" },
-        { name: "Multicare", logo: "/logos/Client/11.jpg" },
-        { name: "Pharmaonics", logo: "/logos/Client/7.jpg" },
-        { name: "Om Pharma", logo: "/logos/Client/9.jpg" }
+        { name: "Lyka Pharma", logo: "./logos/lyka.png" },
+        { name: "Nepal Pharma", logo: "./logos/npl.png" },
+        { name: "Maruti Pharma", logo: "./logos/maruti.png" },
+        { name: "Multicare", logo: "./logos/Client/11.jpg" },
+        { name: "Pharmaonics", logo: "./logos/Client/7.jpg" },
+        { name: "Om Pharma", logo: "./logos/Client/9.jpg" }
       ]
     },
     {
@@ -66,11 +66,11 @@ export default function Projects() {
       category: "BMS",
       location: "VARIOUS FACILITIES",
       desc: "Advanced industrial automation for integrated HVAC, light control, and real-time energy monitoring systems.",
-      image: "/img/Services/BMS & EMS.jpg",
+      image: "./img/Services/BMS & EMS.jpg",
       tag: "AUTOMATION",
       clients: [
-        { name: "Om Pharma", logo: "/logos/Client/9.jpg" },
-        { name: "Multicare", logo: "/logos/Client/11.jpg" }
+        { name: "Om Pharma", logo: "./logos/Client/9.jpg" },
+        { name: "Multicare", logo: "./logos/Client/11.jpg" }
       ]
     },
     {
@@ -78,11 +78,11 @@ export default function Projects() {
       category: "CLEAN ROOM",
       location: "VARIOUS FACILITIES",
       desc: "Full installation of highly controlled clean room environments, strict particulate control, and specialized panel integrations.",
-      image: "/img/Services/clean room partition.jpg",
+      image: "./img/Services/clean room partition.jpg",
       tag: "CRITICAL",
       clients: [
-        { name: "Lyka Pharma", logo: "/logos/lyka.png" },
-        { name: "Nepal Remedies", logo: "/logos/Client/5.jpg" }
+        { name: "Lyka Pharma", logo: "./logos/lyka.png" },
+        { name: "Nepal Remedies", logo: "./logos/Client/5.jpg" }
       ]
     },
     {
@@ -90,11 +90,11 @@ export default function Projects() {
       category: "STORAGE",
       location: "VARIOUS FACILITIES",
       desc: "High-capacity motorized mobile storage and racking systems for optimal space utilization in modern pharmaceutical environments.",
-      image: "/img/motorized_storage.png",
+      image: "./img/motorized_storage.png",
       tag: "COMPLETED",
       clients: [
-        { name: "Quest Pharma", logo: "/logos/quest.png" },
-        { name: "Nepal Pharma", logo: "/logos/npl.png" }
+        { name: "Quest Pharma", logo: "./logos/quest.png" },
+        { name: "Nepal Pharma", logo: "./logos/npl.png" }
       ]
     }
   ];

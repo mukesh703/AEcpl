@@ -120,12 +120,12 @@ export const SUPPLIERS = [
 ];
 
 export const OTHER_INDUSTRIES_CLIENTS = [
-  { name: 'Other Industry Client 1', logo: './Other Industries/1.jpg' },
-  { name: 'Other Industry Client 2', logo: './Other Industries/2.png' },
-  { name: 'Other Industry Client 3', logo: './Other Industries/3.jpeg' },
-  { name: 'Other Industry Client 4', logo: './Other Industries/4.png' },
-  { name: 'Other Industry Client 5', logo: './Other Industries/5.jpg' },
-  { name: 'Other Industry Client 6', logo: './Other Industries/6.jpg' },
+  { name: 'Other Industry Client 1', logo: './other-industries/1.jpg' },
+  { name: 'Other Industry Client 2', logo: './other-industries/2.png' },
+  { name: 'Other Industry Client 3', logo: './other-industries/3.jpeg' },
+  { name: 'Other Industry Client 4', logo: './other-industries/4.png' },
+  { name: 'Other Industry Client 5', logo: './other-industries/5.jpg' },
+  { name: 'Other Industry Client 6', logo: './other-industries/6.jpg' },
 ];
 
 export const PARTNERS = [
@@ -138,7 +138,7 @@ export const SLIDES = [
     title: "Motorized Mobile Storage Systems",
     subtitle: "Manufacturer, Supplier & Exporter of advanced space optimization solutions.",
     description: "We are Manufacturer, Supplier, Exporter of Motorized Mobile Storage Systems, Mobile Racking Systems, Mobile Compactors. With ability to store as high as 150 tons in a single mobile unit, this products leaves others far behind in space optimization.",
-    image: "/img/motorized_storage.png",
+    image: "./img/motorized_storage.png",
     cta: "Learn More"
   },
   {
@@ -146,7 +146,7 @@ export const SLIDES = [
     title: "Compact Racking System",
     subtitle: "High-density mobile racking for intelligent space utilization and maximum storage capacity.",
     description: "Our Compact Racking Systems offer optimal space utilization by eliminating idle aisles. These high-density mobile racking systems are designed to maximize storage capacity in warehouses and industrial facilities, providing a robust and efficient storage solution.",
-    image: "/img/compact storage system.jpg",
+    image: "./img/compact storage system.jpg",
     cta: "Learn More"
   },
   {
@@ -154,7 +154,7 @@ export const SLIDES = [
     title: "Pharma Engineering Excellence",
     subtitle: "Devoted to the Pharma Industry with turnkey solutions from design to validation.",
     description: "Our pharma engineering team provides start-to-finish solutions including custom designing, manufacturing, and complete validation of critical pharmaceutical equipment.",
-    image: "/img/pharma engineering.png",
+    image: "./img/pharma engineering.png",
     cta: "Our Expertise"
   },
   {

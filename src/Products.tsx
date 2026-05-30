@@ -25,86 +25,86 @@ const PRODUCT_CATEGORIES = [
 
 export const CATALOG_ITEMS = [
   // Storage System
-  { title: "Motorized Racking Systems", category: "Storage System", image: "/img/motorized_storage.png" },
-  { title: "Compact Racking System", category: "Storage System", image: "/img/compact storage system.jpg" },
+  { title: "Motorized Racking Systems", category: "Storage System", image: "./img/motorized_storage.png" },
+  { title: "Compact Racking System", category: "Storage System", image: "./img/compact storage system.jpg" },
 
   // HVAC High Side
-  { title: "Cooling Tower", category: "HVAC High Side", image: "/img/Product/HVAC High Side/Cooing Tower.png" },
-  { title: "Chiller & Heat Pump", category: "HVAC High Side", image: "/img/Product/HVAC High Side/Chiller and Heat Pump.png" },
-  { title: "AHU", category: "HVAC High Side", image: "/img/Product/HVAC High Side/AHU.png" },
-  { title: "Dehumidifier", category: "HVAC High Side", image: "/img/Product/HVAC High Side/Dihumdifier.png" },
+  { title: "Cooling Tower", category: "HVAC High Side", image: "./img/Product/HVAC High Side/Cooing Tower.png" },
+  { title: "Chiller & Heat Pump", category: "HVAC High Side", image: "./img/Product/HVAC High Side/Chiller and Heat Pump.png" },
+  { title: "AHU", category: "HVAC High Side", image: "./img/Product/HVAC High Side/AHU.png" },
+  { title: "Dehumidifier", category: "HVAC High Side", image: "./img/Product/HVAC High Side/Dihumdifier.png" },
 
   // HVAC Low Side
-  { title: "P3 Ducting", category: "HVAC Low Side", image: "/img/Product/HVAC Low Side/P3 Ducting.png" },
-  { title: "GI Ducting", category: "HVAC Low Side", image: "/img/Product/HVAC Low Side/GI Ducting.png" },
-  { title: "Mechanical Piping", category: "HVAC Low Side", image: "/img/Product/HVAC Low Side/Mechanicle Piping.png" },
-  { title: "Filters", category: "HVAC Low Side", image: "/img/Product/HVAC Low Side/Filters.png" },
+  { title: "P3 Ducting", category: "HVAC Low Side", image: "./img/Product/HVAC Low Side/P3 Ducting.png" },
+  { title: "GI Ducting", category: "HVAC Low Side", image: "./img/Product/HVAC Low Side/GI Ducting.png" },
+  { title: "Mechanical Piping", category: "HVAC Low Side", image: "./img/Product/HVAC Low Side/Mechanicle Piping.png" },
+  { title: "Filters", category: "HVAC Low Side", image: "./img/Product/HVAC Low Side/Filters.png" },
 
   // Clean Room Panel
-  { title: "PPGI / PCGI Puff Panels", category: "Clean Room Panel", image: "/img/Product/Clean Room Pannel/PPGI: PCGI  Puff Panel.png" },
-  { title: "Rockwool Panels", category: "Clean Room Panel", image: "/img/Product/Clean Room Pannel/Rockwools Panel.png" },
-  { title: "Clean Room Doors", category: "Clean Room Panel", image: "/img/Product/Clean Room Pannel/Clean Room Doors.png" },
+  { title: "PPGI / PCGI Puff Panels", category: "Clean Room Panel", image: "./img/Product/Clean Room Pannel/PPGI: PCGI  Puff Panel.png" },
+  { title: "Rockwool Panels", category: "Clean Room Panel", image: "./img/Product/Clean Room Pannel/Rockwools Panel.png" },
+  { title: "Clean Room Doors", category: "Clean Room Panel", image: "./img/Product/Clean Room Pannel/Clean Room Doors.png" },
   
   // Clean Room Epoxy Flooring
-  { title: "Epoxy Flooring", category: "Clean Room Epoxy Flooring", image: "/img/Product/Clean room expoxy Flooring/epoxy flooring.png" },
-  { title: "Epoxy Coving", category: "Clean Room Epoxy Flooring", image: "/img/Product/Clean room expoxy Flooring/epoxy coving.png" },
+  { title: "Epoxy Flooring", category: "Clean Room Epoxy Flooring", image: "./img/Product/Clean room expoxy Flooring/epoxy flooring.png" },
+  { title: "Epoxy Coving", category: "Clean Room Epoxy Flooring", image: "./img/Product/Clean room expoxy Flooring/epoxy coving.png" },
 
   // Electrical Solutions
-  { title: "Clean Room Lighting", category: "Electrical Solutions", image: "/img/Product/Electrical Solution/Clean Room Lighting.png" },
-  { title: "HT & LT Panels", category: "Electrical Solutions", image: "/img/Product/Electrical Solution/HT & LT Panels.png" },
-  { title: "Sodium Monochromatic Light", category: "Electrical Solutions", image: "/img/Product/Electrical Solution/Sodium Monochromatic Light.png" },
+  { title: "Clean Room Lighting", category: "Electrical Solutions", image: "./img/Product/Electrical Solution/Clean Room Lighting.png" },
+  { title: "HT & LT Panels", category: "Electrical Solutions", image: "./img/Product/Electrical Solution/HT & LT Panels.png" },
+  { title: "Sodium Monochromatic Light", category: "Electrical Solutions", image: "./img/Product/Electrical Solution/Sodium Monochromatic Light.png" },
 
   // Clean Room Display
-  { title: "Clean Room Display", category: "Clean Room Display", image: "/img/Product/Clean Room Display/Clean Room Display.png" },
+  { title: "Clean Room Display", category: "Clean Room Display", image: "./img/Product/Clean Room Display/Clean Room Display.png" },
 
   // Access Control & Door Interlock Systems
-  { title: "Face Recognition Systems", category: "Access Control & Door Interlock Systems", image: "/img/Product/Access Controls & Door Interlock System/Face Recognition System.png" },
-  { title: "Access Control", category: "Access Control & Door Interlock Systems", image: "/img/Product/Access Controls & Door Interlock System/Access Control.png" },
-  { title: "Door Interlocking System", category: "Access Control & Door Interlock Systems", image: "/img/Product/Access Controls & Door Interlock System/Door Interlocking System.png" },
+  { title: "Face Recognition Systems", category: "Access Control & Door Interlock Systems", image: "./img/Product/Access Controls & Door Interlock System/Face Recognition System.png" },
+  { title: "Access Control", category: "Access Control & Door Interlock Systems", image: "./img/Product/Access Controls & Door Interlock System/Access Control.png" },
+  { title: "Door Interlocking System", category: "Access Control & Door Interlock Systems", image: "./img/Product/Access Controls & Door Interlock System/Door Interlocking System.png" },
 
   // Sensor Technology
-  { title: "Air Velocity Transmitter", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Air Velocity Transmitter.png" },
-  { title: "Air Velocity Sensor", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Air Velocity Sensor.png" },
-  { title: "Humidity Transmitter", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Humidity.png" },
-  { title: "Differential Pressure Switch", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Differential Pressure Switch.png" },
-  { title: "Magnehelic Gauge", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Magnehelic Gauge.png" },
-  { title: "Digital Magnehelic Gauge", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Digital Magnehelic Gauge.png" },
-  { title: "Air Flow Management", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Air Flow Management.png" },
-  { title: "Valve Actuator", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Valve Acutator.png" },
-  { title: "Flow Transmitter", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Flow Transmitter.png" },
-  { title: "PICV", category: "Sensor Technology", image: "/img/Product/Sensor Technology/PICV.png" },
-  { title: "Flotech Liquid Level Switch", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Flotech Liquid Level Switch.png" },
-  { title: "Differential Pressure Transmitter", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Differential Pressure Transmitter.png" },
-  { title: "Level Switch", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Level Switch.png" },
-  { title: "CO2 Sensor", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Co2 Sensor.png" },
-  { title: "Temperature Transmitter RS", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Temperature Transmitter RS.png" },
-  { title: "Float Sensor", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Flot Sensor.png" },
-  { title: "Pneumatic Valve", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Pnumetic Valve.png" },
-  { title: "Butterfly Valve", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Butter Fly Valve.png" },
-  { title: "Control Valve", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Control Valve.png" },
-  { title: "DPT Transmitter", category: "Sensor Technology", image: "/img/Product/Sensor Technology/DPT Transmitter.png" },
-  { title: "Wet DPT Transmitter", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Wet DPT Transmitter.png" },
-  { title: "Gas Sensing Transmitter", category: "Sensor Technology", image: "/img/Product/Sensor Technology/Gas Sensating Transmitter.png" },
+  { title: "Air Velocity Transmitter", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Air Velocity Transmitter.png" },
+  { title: "Air Velocity Sensor", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Air Velocity Sensor.png" },
+  { title: "Humidity Transmitter", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Humidity.png" },
+  { title: "Differential Pressure Switch", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Differential Pressure Switch.png" },
+  { title: "Magnehelic Gauge", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Magnehelic Gauge.png" },
+  { title: "Digital Magnehelic Gauge", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Digital Magnehelic Gauge.png" },
+  { title: "Air Flow Management", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Air Flow Management.png" },
+  { title: "Valve Actuator", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Valve Acutator.png" },
+  { title: "Flow Transmitter", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Flow Transmitter.png" },
+  { title: "PICV", category: "Sensor Technology", image: "./img/Product/Sensor Technology/PICV.png" },
+  { title: "Flotech Liquid Level Switch", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Flotech Liquid Level Switch.png" },
+  { title: "Differential Pressure Transmitter", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Differential Pressure Transmitter.png" },
+  { title: "Level Switch", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Level Switch.png" },
+  { title: "CO2 Sensor", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Co2 Sensor.png" },
+  { title: "Temperature Transmitter RS", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Temperature Transmitter RS.png" },
+  { title: "Float Sensor", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Flot Sensor.png" },
+  { title: "Pneumatic Valve", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Pnumetic Valve.png" },
+  { title: "Butterfly Valve", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Butter Fly Valve.png" },
+  { title: "Control Valve", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Control Valve.png" },
+  { title: "DPT Transmitter", category: "Sensor Technology", image: "./img/Product/Sensor Technology/DPT Transmitter.png" },
+  { title: "Wet DPT Transmitter", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Wet DPT Transmitter.png" },
+  { title: "Gas Sensing Transmitter", category: "Sensor Technology", image: "./img/Product/Sensor Technology/Gas Sensating Transmitter.png" },
 
   // SS Equipment & Furniture
-  { title: "Apron Cabinets", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/Apron Cabinet.png" },
-  { title: "Cross Over bench", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/Cross Over Bench.png" },
-  { title: "Pass Box", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/Pass Box.png" },
-  { title: "RLAF and LAF", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/RLAF and LAF.png" },
-  { title: "Conveyor Belt", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/Conveyar Belt.png" },
-  { title: "Trolley", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/Trolly.png" },
-  { title: "Storage Tank & Mixers", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/Storage Tank & Mixer.png" },
-  { title: "SS Ducts", category: "SS Equipment & Furniture", image: "/img/Product/SS Equipment & Furniture/SS Ducts.png" },
+  { title: "Apron Cabinets", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/Apron Cabinet.png" },
+  { title: "Cross Over bench", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/Cross Over Bench.png" },
+  { title: "Pass Box", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/Pass Box.png" },
+  { title: "RLAF and LAF", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/RLAF and LAF.png" },
+  { title: "Conveyor Belt", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/Conveyar Belt.png" },
+  { title: "Trolley", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/Trolly.png" },
+  { title: "Storage Tank & Mixers", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/Storage Tank & Mixer.png" },
+  { title: "SS Ducts", category: "SS Equipment & Furniture", image: "./img/Product/SS Equipment & Furniture/SS Ducts.png" },
 
   // Spare Division
-  { title: "Silicon Products", category: "Spare Division", image: "/img/Product/Spare Division/Silicon Products.png" },
-  { title: "Sanitizers & Dryers", category: "Spare Division", image: "/img/Product/Spare Division/Sanitizer & Dryers.png" },
-  { title: "Air Curtains", category: "Spare Division", image: "/img/Product/Spare Division/Air Curtains.png" },
-  { title: "Sieves & Spares", category: "Spare Division", image: "/img/Product/Spare Division/Sives and Spare.png" },
-  { title: "Pneumatic Products", category: "Spare Division", image: "/img/Product/Spare Division/Pnumatic Products.png" },
-  { title: "Insulation", category: "Spare Division", image: "/img/Product/Spare Division/Insulation.png" },
-  { title: "Valves & Actuators", category: "Spare Division", image: "/img/Product/Spare Division/Valve and Acutator.png" },
-  { title: "Pipes & Fittings", category: "Spare Division", image: "/img/Product/Spare Division/Piping & Fitting.png" }
+  { title: "Silicon Products", category: "Spare Division", image: "./img/Product/Spare Division/Silicon Products.png" },
+  { title: "Sanitizers & Dryers", category: "Spare Division", image: "./img/Product/Spare Division/Sanitizer & Dryers.png" },
+  { title: "Air Curtains", category: "Spare Division", image: "./img/Product/Spare Division/Air Curtains.png" },
+  { title: "Sieves & Spares", category: "Spare Division", image: "./img/Product/Spare Division/Sives and Spare.png" },
+  { title: "Pneumatic Products", category: "Spare Division", image: "./img/Product/Spare Division/Pnumatic Products.png" },
+  { title: "Insulation", category: "Spare Division", image: "./img/Product/Spare Division/Insulation.png" },
+  { title: "Valves & Actuators", category: "Spare Division", image: "./img/Product/Spare Division/Valve and Acutator.png" },
+  { title: "Pipes & Fittings", category: "Spare Division", image: "./img/Product/Spare Division/Piping & Fitting.png" }
 ];
 
 export default function Products() {

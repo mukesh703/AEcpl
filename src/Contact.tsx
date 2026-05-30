@@ -14,7 +14,7 @@ export default function Contact() {
       role: "Technical Director",
       phone: "+977-9855072285",
       email: "subash@adityaengineering.com.np",
-      image: "/img/Subash.jpeg"
+      image: "./img/Subash.jpeg"
     },
     {
       dept: "Operations Department",
@@ -22,7 +22,7 @@ export default function Contact() {
       role: "Operations Manager",
       phone: "+977-9851358709",
       email: "sales@adityaengineering.com.np",
-      image: "/img/samjhana.jpeg"
+      image: "./img/samjhana.jpeg"
     },
     {
       dept: "Purchase Department",
@@ -30,7 +30,7 @@ export default function Contact() {
       role: "Senior Manager",
       phone: "+977-9855072285",
       email: "ajay@adityaengineering.com.np",
-      image: "/img/ajay-pd-yadav.jpg"
+      image: "./img/ajay-pd-yadav.jpg"
     }
   ];
 
