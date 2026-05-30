@@ -18,6 +18,13 @@ import {
   Settings,
 } from "lucide-react";
 
+import oi1 from "./Other Industries/1.jpg";
+import oi2 from "./Other Industries/2.png";
+import oi3 from "./Other Industries/3.jpeg";
+import oi4 from "./Other Industries/4.png";
+import oi5 from "./Other Industries/5.jpg";
+import oi6 from "./Other Industries/6.jpg";
+
 export const COLORS = {
   primary: "#1d4ed8", // blue-700
   secondary: "#3B82F6", // blue-500
@@ -156,12 +163,12 @@ export const SUPPLIERS = [
 ];
 
 export const OTHER_INDUSTRIES_CLIENTS = [
-  { name: "Other Industry Client 1", logo: "./logos/other-industries/1.jpg" },
-  { name: "Other Industry Client 2", logo: "./logos/other-industries/2.png" },
-  { name: "Other Industry Client 3", logo: "./logos/other-industries/3.jpeg" },
-  { name: "Other Industry Client 4", logo: "./logos/other-industries/4.png" },
-  { name: "Other Industry Client 5", logo: "./logos/other-industries/5.jpg" },
-  { name: "Other Industry Client 6", logo: "./logos/other-industries/6.jpg" },
+  { name: "Other Industry Client 1", logo: oi1 },
+  { name: "Other Industry Client 2", logo: oi2 },
+  { name: "Other Industry Client 3", logo: oi3 },
+  { name: "Other Industry Client 4", logo: oi4 },
+  { name: "Other Industry Client 5", logo: oi5 },
+  { name: "Other Industry Client 6", logo: oi6 },
 ];
 
 export const PARTNERS = [
