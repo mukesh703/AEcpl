@@ -120,12 +120,12 @@ export const SUPPLIERS = [
 ];
 
 export const OTHER_INDUSTRIES_CLIENTS = [
-  { name: 'Other Industry Client 1', logo: './other-industries/1.jpg' },
-  { name: 'Other Industry Client 2', logo: './other-industries/2.png' },
-  { name: 'Other Industry Client 3', logo: './other-industries/3.jpeg' },
-  { name: 'Other Industry Client 4', logo: './other-industries/4.png' },
-  { name: 'Other Industry Client 5', logo: './other-industries/5.jpg' },
-  { name: 'Other Industry Client 6', logo: './other-industries/6.jpg' },
+  { name: 'Other Industry Client 1', logo: './Other Industries/1.jpg' },
+  { name: 'Other Industry Client 2', logo: './Other Industries/2.png' },
+  { name: 'Other Industry Client 3', logo: './Other Industries/3.jpeg' },
+  { name: 'Other Industry Client 4', logo: './Other Industries/4.png' },
+  { name: 'Other Industry Client 5', logo: './Other Industries/5.jpg' },
+  { name: 'Other Industry Client 6', logo: './Other Industries/6.jpg' },
 ];
 
 export const PARTNERS = [
