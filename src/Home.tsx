@@ -236,7 +236,7 @@ export default function Home() {
                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-2">Projects Delivered</p>
                 </div>
                 <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                   <p className="text-4xl font-bold text-slate-900">2M+</p>
+                   <p className="text-4xl font-bold text-slate-900">0.2M+</p>
                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-2">Sq. Ft. Automated</p>
                 </div>
               </div>

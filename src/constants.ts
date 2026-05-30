@@ -197,7 +197,7 @@ export const SLIDES = [
       "High-density mobile racking for intelligent space utilization and maximum storage capacity.",
     description:
       "Our Compact Racking Systems offer optimal space utilization by eliminating idle aisles. These high-density mobile racking systems are designed to maximize storage capacity in warehouses and industrial facilities, providing a robust and efficient storage solution.",
-    image: "./img/compact storage system.jpg",
+    image: "./img/Product/Access Controls & Door Interlock System/Compact Storage System.png",
     cta: "Learn More",
   },
   {

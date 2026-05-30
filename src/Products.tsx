@@ -26,7 +26,7 @@ const PRODUCT_CATEGORIES = [
 export const CATALOG_ITEMS = [
   // Storage System
   { title: "Motorized Racking Systems", category: "Storage System", image: "./img/motorized_storage.png" },
-  { title: "Compact Racking System", category: "Storage System", image: "./img/compact storage system.jpg" },
+  { title: "Compact Racking System", category: "Storage System", image: "./img/Product/Access Controls & Door Interlock System/Compact Storage System.png" },
 
   // HVAC High Side
   { title: "Cooling Tower", category: "HVAC High Side", image: "./img/Product/HVAC High Side/Cooing Tower.png" },

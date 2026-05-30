@@ -17,18 +17,18 @@ export default function Contact() {
       image: "./img/Subash.jpeg"
     },
     {
-      dept: "Operations Department",
+      dept: "Purchase/ Sales Department",
       name: "Mrs. Samjhana Shrestha",
-      role: "Operations Manager",
+      role: "Operation Manager",
       phone: "+977-9851358709",
       email: "sales@adityaengineering.com.np",
       image: "./img/samjhana_new.jpg"
     },
     {
-      dept: "Purchase Department",
+      dept: "Engineering Department",
       name: "Mr. Ajay Pd. Yadav",
       role: "Senior Manager",
-      phone: "+977-9855072285",
+      phone: "+977-9855078285",
       email: "ajay@adityaengineering.com.np",
       image: "./img/ajay-pd-yadav.jpg"
     }
@@ -154,12 +154,7 @@ export default function Contact() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input type="text" name="company" placeholder="COMPANY" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
-                <select name="inquiry_type" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm appearance-none">
-                  <option value="General">INQUIRY TYPE</option>
-                  <option value="BMS & AUTOMATION">BMS & AUTOMATION</option>
-                  <option value="HVAC SOLUTIONS">HVAC SOLUTIONS</option>
-                  <option value="CLEAN ROOM BUILD">CLEAN ROOM BUILD</option>
-                </select>
+                <input type="text" name="inquiry_type" placeholder="INQUIRY TYPE" className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
               </div>
               <textarea name="message" rows={6} placeholder="SPECIFICATION DETAILS" required className="w-full px-6 py-4 bg-white border border-slate-200 text-xs font-bold tracking-widest focus:ring-1 focus:ring-primary focus:outline-none rounded-sm" />
               <button type="submit" className="w-full btn-primary py-5 text-base shadow-xl shadow-primary/10 uppercase tracking-[0.3em]">
