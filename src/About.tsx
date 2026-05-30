@@ -219,7 +219,7 @@ export default function About() {
                 className="group p-6 rounded-2xl bg-white border border-slate-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[120px]"
               >
                 <img 
-                  src={leader.logo} 
+                  src={leader.logo.startsWith('./') ? import.meta.env.BASE_URL + leader.logo.substring(2) : leader.logo} 
                   alt={leader.name} 
                   className="max-h-16 max-w-full object-contain transition-all duration-500 hover:scale-110"
                   onError={(e) => {
@@ -249,7 +249,7 @@ export default function About() {
                 className="group p-6 rounded-2xl bg-white border border-slate-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center min-h-[120px]"
               >
                 <img 
-                  src={client.logo} 
+                  src={client.logo.startsWith('./') ? import.meta.env.BASE_URL + client.logo.substring(2) : client.logo} 
                   alt={client.name} 
                   className="max-h-16 max-w-full object-contain transition-all duration-500 hover:scale-110"
                   onError={(e) => {
